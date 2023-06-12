@@ -1,0 +1,5 @@
+from gettext import npgettext
+from numpy import *
+before = npgettext.genfromtxt('data.txt',delimiter=',')
+before = before.astype('int32')
+print(before)
