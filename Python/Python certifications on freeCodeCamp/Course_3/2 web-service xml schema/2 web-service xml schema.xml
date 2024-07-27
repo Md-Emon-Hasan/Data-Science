@@ -1,0 +1,47 @@
+<!-- XML document -->
+    <person>
+        <lastname>Severance</lastname>
+        <age>17</age>
+        <databorn>2001-04-17</databorn>
+    </person>
+
+<!-- XML schema contract -->
+<xs:complexType name='person'>
+    <xs:sequence>
+        <xs:element name="lastname" type="xs:string"/>
+        <xs:element name="age" type="xs:integer"/>
+        <xs:element name="dateborn" type="xs:date"/>
+    </xs:sequence>
+</xs:complexType>
+
+<!-- XSD constraints -->
+<xs:element name="person">
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element name="full_name" type="xs:string" minOccurs="10"/>
+            <xs:element name="child_name" type="xs:string" minOccurs="0" maxOccurs="10"/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:element>
+
+<person>
+    <full-name>Tove Refsnes</full-name>
+    <child_name>Hege</child_name>
+    <child_name>Stale</child_name>
+    <child_name>Jim</child_name>
+    <child_name>Borge</child_name>
+</person>
+
+<!-- XSD data types -->
+<xs:element name="customer" type="xs:string"/>
+<xs:element name="start" type="xs:date"/>
+<xs:element name="startdate" type="xs:dateTime"/>
+<xs:element name="prize" type="xs:decimal"/>
+<xs:element name="weeks" type="xs:integer"/>
+
+<customer>John Smith</customer>
+<start>2002-09-24</start>
+<startdate>2002-05-30T09:3010Z</startdate>
+<prize>999.50</prize>
+<weeks>30</weeks>
+
