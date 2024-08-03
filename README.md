@@ -2,6 +2,8 @@
 
 Welcome to the **Data Science Projects** repository! This repository serves as a comprehensive collection of data science projects and exercises designed to enhance your understanding and application of data science concepts using Python and related libraries.
 
+![ds](https://github.com/user-attachments/assets/7ce72c23-1d5c-45ec-a5e1-21dffc54e3b5)
+
 ## 📋 Contents
 
 - [Introduction](#introduction)
